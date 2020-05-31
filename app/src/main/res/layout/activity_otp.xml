@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:id="@+id/otp_num"
+            android:textColor="@android:color/black"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:id="@+id/til_inputlayout_otp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tie_otp_verify"
+                android:hint="@string/otp"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:textSize="@dimen/text_size"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_verify_otp"
+            android:layout_gravity="center"
+            android:text="@string/otp_verify"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten_dp">
+
+        <Button
+            android:id="@+id/button_resend_otp_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/resend_button_background"
+            android:text="@string/resend_otp"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/count_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/button_resend_otp_verify"
+            android:layout_marginStart="@dimen/fifty_dp"
+            android:textSize="@dimen/fifteen_sp" />
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

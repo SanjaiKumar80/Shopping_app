@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+<!--
+   <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_sp"
+            android:textStyle="bold" />
+
+
+</com.google.android.material.appbar.AppBarLayout>
+    </androidx.appcompat.widget.Toolbar>
+-->
+<!--
+    <ImageButton
+        android:id="@+id/button_show_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/toolbar"
+        android:background="@null"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginEnd="@dimen/six_dp"
+        android:src="@drawable/ic_person_outline_black_24dp"
+        android:contentDescription="@string/app_name" />
+-->
+
+
+<include layout="@layout/content_main"/>
+
+</RelativeLayout>

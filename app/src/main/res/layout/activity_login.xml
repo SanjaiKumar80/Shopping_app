@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/forty_dp"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:text="@string/sign_in"
+            android:gravity="center"
+            android:textSize="@dimen/twenty_sp"
+            android:textStyle="bold"/>
+
+
+<!--
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_button"
+            android:layout_marginTop="20dp"
+            android:text="Continue with facebook"
+            />
+-->
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/ten_dp"
+            android:id="@+id/sign_in_google"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til_login_number"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tie_login_number"
+                android:hint="@string/mobile_number"
+                android:textSize="@dimen/text_size"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:id="@+id/til_login_password"
+            app:passwordToggleTint="@color/button_background"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tie_login_password"
+                android:inputType="textWebPassword"
+                android:hint="@string/login_password"
+                android:textSize="@dimen/text_size"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_forgotpassword"
+            android:background="@null"
+            android:text="@string/forgot_password_title"
+            android:textColor="@color/red"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/ten_dp"
+            tools:ignore="RtlHardcoded" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:layout_gravity="center"
+            android:text="@string/sign_in"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sign_up"
+            android:background="@null"
+            android:text="@string/register_button"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:textAllCaps="false"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/twenty_sp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="header_size">20dp</dimen>
+    <dimen name="forty_dp">40dp</dimen>
+    <dimen name="six_dp">6dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="forty_five">45dp</dimen>
+    <dimen name="image_size">-40dp</dimen>
+    <dimen name="twenty_nine">-29dp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="one_twenty_dp">120dp</dimen>
+    <dimen name="ten_sp">10sp</dimen>
+    <dimen name="fifteen_sp">15sp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="nav_header_vertical_spacing">18dp</dimen>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="UseCompoundDrawables">
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_essentials"
+        android:textStyle="bold"
+        android:textSize="@dimen/sixteen_sp"/>
+-->
+
+    <ImageView
+        android:id="@+id/iv_list_items"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="@dimen/ten_dp"
+         android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/app_name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_needs"
+        android:layout_marginStart="@dimen/ten_dp"
+        android:id="@+id/tv_list_items" />
+</LinearLayout>

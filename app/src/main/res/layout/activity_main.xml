@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipeRefresh">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:id="@+id/txt_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/twenty_sp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.appcompat.widget.Toolbar>
+                    <ImageButton
+                        android:id="@+id/button_show_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/toolbar"
+                        android:background="@null"
+                        android:layout_marginTop="@dimen/twenty_dp"
+                        android:src="@drawable/ic_person_outline_black_24dp"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+                <!--
+                       <SearchView
+                            android:id="@+id/searchView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:queryHint="Search Here"
+                          android:iconifiedByDefault="false"/>
+                -->
+
+                <!--            custom:auto_cycle="true"/>-->
+                <!-- custom:indicator_visibility="visible"
+                 custom:pager_animation="Accordion"
+                 custom:pager_animation_span="1100"-->
+
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="326dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:id="@+id/iv_banner_image"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/backgroundimage"
+                    android:contentDescription="@string/app_name" />
+
+
+                <!--
+                        <com.daimajia.slider.library.Indicators.PagerIndicator
+                            android:id="@+id/custom_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            custom:selected_color="#0095BF"
+                            custom:selected_height="@dimen/six_dp"
+                            custom:selected_padding_left="@dimen/five_dp"
+                            custom:selected_padding_right="@dimen/five_dp"
+                            custom:selected_width="@dimen/six_dp"
+                            custom:shape="oval"
+                            custom:unselected_color="#55333333"
+                            custom:unselected_height="@dimen/six_dp"
+                            custom:unselected_padding_left="@dimen/five_dp"
+                            custom:unselected_padding_right="@dimen/five_dp"
+                            custom:unselected_width="@dimen/six_dp" />
+                -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_horizontal_list"
+                    android:scrollbars="vertical"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

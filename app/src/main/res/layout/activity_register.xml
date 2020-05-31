@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <include layout="@layout/layout_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/forty_dp"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:text="@string/sign_up"
+            android:gravity="center|center_vertical"
+            android:textSize="@dimen/twenty_sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:id="@+id/til_register_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tie_register_name"
+                android:hint="@string/register_name"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/text_size"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spin_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:overlapAnchor="false"
+                android:popupBackground="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/twenty_sp"
+                tools:ignore="UnusedAttribute" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/til_register_number"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/ten_dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tie_register_number"
+                    android:hint="@string/register_mobilenumber"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til_register_email"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tie_register_email"
+                android:hint="@string/register_email"
+                android:inputType="textAutoComplete"
+                android:textSize="@dimen/text_size"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:id="@+id/til_register_password"
+            app:passwordToggleTint="@color/button_background"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tie_register_password"
+                android:inputType="textWebPassword"
+                android:hint="@string/register_password"
+                android:textSize="@dimen/text_size"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:layout_gravity="center"
+            android:text="@string/verify_mobilenumber"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sign_in"
+            android:background="@null"
+            android:textColor="@color/red"
+            android:text="@string/login_button"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
